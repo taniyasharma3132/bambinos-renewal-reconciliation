@@ -1,0 +1,14 @@
+invoice_id,student_id,payment_status,net_amount,paid_at,form_ids,form_status,booking_request,booking_status,scheduled_rows,furthest_stage,hours_since_payment,decision,reason_codes,note
+84901,68101,Paid,12000.0,2026-11-01 10:15:22,3301,Approved,5501,Completed,2,5_scheduled,70.74,COMPLETED,,end-to-end done; payment->schedule TAT 1.75h
+84902,68102,Paid,10500.0,2026-11-01 14:20:10,3302,Approved,5502,Pending_Batch_Allocation,0,4_booking_request,66.66,AUTO_APPROVE,STUCK_PENDING_ALLOCATION,hours since last record update: 64.0
+84903,68103,Paid,9000.0,2026-11-02 09:05:44,3303,Pending,,,0,2_form_submitted,47.9,AUTO_APPROVE,FORM_APPROVAL_BACKLOG,hours since last record update: 47.5
+84904,68104,Paid,12000.0,2026-11-02 11:30:05,3304,Pending,,,0,2_form_submitted,45.5,PARENT_CONFIRM,PAYER_CONTACT_MISMATCH|FORM_APPROVAL_BACKLOG,hours since last record update: 45.0
+84905,68105,Paid,11000.0,2026-11-02 13:10:19,3305,Approved,5505,Failed_Batch_Full,0,4_booking_request,43.83,AUTO_APPROVE,FALSE_BATCH_FULL,hours since last record update: 40.42
+84906,68106,Paid,18000.0,2026-11-02 16:00:00,,,,,0,1_invoice_paid,41.0,PARENT_CONFIRM,ORPHANED_INVOICE,hours since last record update: 41.0
+84907,68107,Paid,7600.0,2026-11-02 18:45:30,3307,Pending,,,0,2_form_submitted,38.24,EXCEPTION,DISCOUNT_NO_APPROVAL_REF|FORM_APPROVAL_BACKLOG,hours since last record update: 37.83
+84908,68108,Paid,22000.0,2026-11-03 08:15:11,"3308,3309",Pending,,,0,2_form_submitted,24.75,AUTO_APPROVE,DUPLICATE_FORM|FORM_APPROVAL_BACKLOG,hours since last record update: 24.5
+84909,68109,Partially_Paid,5250.0,2026-11-03 10:00:00,3310,Pending,,,0,2_form_submitted,23.0,EXCEPTION,PARTIAL_PAYMENT|FORM_AMOUNT_MISMATCH|FORM_APPROVAL_BACKLOG,hours since last record update: 22.5
+84910,68110,Paid,11000.0,2026-11-03 11:20:45,,,,,0,1_invoice_paid,21.65,PARENT_CONFIRM,ORPHANED_INVOICE,hours since last record update: 21.65
+84911,68111,Failed,12000.0,,3311,Pending,,,0,2_form_submitted,20.5,EXCEPTION,PAYMENT_NOT_CONFIRMED|FORM_APPROVAL_BACKLOG,hours since last record update: 20.25
+84912,68112,Paid,9000.0,2026-11-03 15:40:12,3312,Approved,5512,Awaiting_Parent_Batch_Selection,0,4_booking_request,17.33,EXCEPTION,BATCH_CHANGE_REQUESTED,hours since last record update: 15.75
+84913,68113,Paid,11500.0,2026-11-03 16:50:00,3313(fuzzy),Pending,,,0,2_form_submitted,16.17,AUTO_APPROVE,INVOICE_ID_TYPO|FORM_APPROVAL_BACKLOG|DATA_HYGIENE_HOMOGLYPH,hours since last record update: 15.83

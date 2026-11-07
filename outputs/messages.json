@@ -1,0 +1,232 @@
+[
+  {
+    "invoice_id": "84902",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9822XXXX02",
+    "priority": "P3",
+    "trigger": "AUTO_APPROVE",
+    "send_rule": "send immediately after schedule rows are written",
+    "text": "Hi Ka***k, Di***a's renewal is confirmed ✅\nUnbox Maths Level 3 · BM-G5-Batch-C (Mon & Wed, 6:00 PM) with Mr. Vikram S***.\nNext class: 2026-11-09 (please check the app for the full calendar). Sorry for the wait in confirming this.\nPayment ₹10,500 received · BMB-INV-2026-84902. Reply HELP if anything looks wrong."
+  },
+  {
+    "invoice_id": "84903",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9833XXXX03",
+    "priority": "P3",
+    "trigger": "AUTO_APPROVE",
+    "send_rule": "send immediately after schedule rows are written",
+    "text": "Hi Ne***a, Ka***r's renewal is confirmed ✅\nLittle Yogi Gita Level 1 · LY-G3-Batch-B (Wed & Fri, 4:30 PM) with Acharya Nancy S***.\nNext class: 2026-11-06 (please check the app for the full calendar). Sorry for the wait in confirming this.\nPayment ₹9,000 received · BMB-INV-2026-84903. Reply HELP if anything looks wrong."
+  },
+  {
+    "invoice_id": "84904",
+    "channel": "WhatsApp",
+    "to_role": "Parent (registered number)",
+    "to_contact": "+91-9844XXXX04",
+    "priority": "P3",
+    "trigger": "PAYER_CONTACT_MISMATCH",
+    "send_rule": "send now to the REGISTERED number, not the payer number",
+    "text": "Hi, we received a renewal payment of ₹12,000 for An***a's classes (BMB-INV-2026-84904) from a phone/email that differs from the one on your account. Just to be safe, please reply YES if this payment was made by you or a family member. Classes will be scheduled right after your reply."
+  },
+  {
+    "invoice_id": "84904",
+    "channel": "Slack #ops-renewals",
+    "to_role": "Ops agent on shift",
+    "to_contact": "#ops-renewals",
+    "priority": "P3",
+    "trigger": "PAYER_CONTACT_MISMATCH",
+    "send_rule": "send only if no YES in 4h",
+    "text": "🟡 Payer contact mismatch, unconfirmed after 4h\nInvoice 84904 · ₹12,000 · fields differ: see exceptions.csv · teacher remark: 'Mother paid from her number'\nAll IDs (student/user/educator/class) and amount match, so risk is low. Confirm with parent by call, then approve."
+  },
+  {
+    "invoice_id": "84905",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9855XXXX05",
+    "priority": "P3",
+    "trigger": "AUTO_APPROVE",
+    "send_rule": "send immediately after schedule rows are written",
+    "text": "Hi Me***a, Re***h's renewal is confirmed ✅\nUnbox Chess Level 2 · CM-G4-Batch-D (Sat & Sun, 11:00 AM) with Coach Arvind K***.\nNext class: 2026-11-07 (please check the app for the full calendar). Sorry for the wait in confirming this.\nPayment ₹11,000 received · BMB-INV-2026-84905. Reply HELP if anything looks wrong."
+  },
+  {
+    "invoice_id": "84906",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+971-5012XXX06",
+    "priority": "P2",
+    "trigger": "ORPHANED_INVOICE",
+    "send_rule": "send now; one-tap reply buttons",
+    "text": "Hi Fa***n, thank you for renewing Zo***a's classes 🎉 We've received your payment of ₹18,000 (BMB-INV-2026-84906).\nShould Zo***a continue in the same batch?\nYoung Communicators GCC Track · YC-GCC-Batch-E (Sun & Tue, 7:00 PM) with Ms. Rhea B***\nReply 1 = Yes, continue as is\nReply 2 = I'd like a different day/time"
+  },
+  {
+    "invoice_id": "84906",
+    "channel": "WhatsApp",
+    "to_role": "Teacher",
+    "to_contact": "educator_id 1102 (Ms. Rhea B***)",
+    "priority": "P2",
+    "trigger": "ORPHANED_INVOICE",
+    "send_rule": "send now",
+    "text": "Hi Ms. Rhea B***, Zo***a's renewal payment (₹18,000, BMB-INV-2026-84906) has come through, but we don't see a renewal form from you yet. We've asked the parent to confirm the same batch. If the parent told you about any change in days/time, just reply here with it - no need to fill the form again."
+  },
+  {
+    "invoice_id": "84906",
+    "channel": "Slack #ops-renewals",
+    "to_role": "Ops agent on shift",
+    "to_contact": "#ops-renewals",
+    "priority": "P2",
+    "trigger": "ORPHANED_INVOICE",
+    "send_rule": "send only if parent has not replied in 4h",
+    "text": "🟠 Paid renewal with no form and no parent confirmation after 4h\nInvoice 84906 · student 68106 · ₹18,000 · paid 41h ago · teacher Ms. Rhea B***\nDefault action ready: same-batch renewal in YC-GCC-Batch-E. Call parent or click Approve default."
+  },
+  {
+    "invoice_id": "84907",
+    "channel": "Slack #ops-leads",
+    "to_role": "Ops Lead / Finance",
+    "to_contact": "#ops-leads",
+    "priority": "P2",
+    "trigger": "DISCOUNT_NO_APPROVAL_REF",
+    "send_rule": "send now",
+    "text": "🟠 Discount needs approval\nInvoice 84907 · student 68107 · list ₹9,500, discount ₹1,900 (20%), paid ₹7,600\nTeacher Ms. Simran D*** noted: 'Offered 20% retention scholarship discount'. No approval reference found. Approve / Reject? (Payment is already taken, so approve-by-default would be the normal outcome; the point is to log who authorised it.)"
+  },
+  {
+    "invoice_id": "84907",
+    "channel": "WhatsApp",
+    "to_role": "Teacher",
+    "to_contact": "educator_id 1125 (Ms. Simran D***)",
+    "priority": "P2",
+    "trigger": "DISCOUNT_NO_APPROVAL_REF",
+    "send_rule": "send now",
+    "text": "Hi Ms. Simran D***, the 20% retention discount on Vi***n's renewal (BMB-INV-2026-84907) has no approval reference on file. Please reply with who approved it (name/ticket) so Ops can close it today. For future discounts, please use the discount-code link so approval happens before the parent pays."
+  },
+  {
+    "invoice_id": "84908",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+1-40855XXX08",
+    "priority": "P3",
+    "trigger": "AUTO_APPROVE",
+    "send_rule": "send immediately after schedule rows are written",
+    "text": "Hi Ro***n, Si***a's renewal is confirmed ✅\nLittle Yogi Gita US Track · LY-US-Batch-G (Sat & Sun, 9:30 AM) with Acharya Nancy S***.\nNext class: 2026-11-07 (please check the app for the full calendar). Sorry for the wait in confirming this.\nPayment ₹22,000 received · BMB-INV-2026-84908. Reply HELP if anything looks wrong."
+  },
+  {
+    "invoice_id": "84909",
+    "channel": "Slack #ops-leads",
+    "to_role": "Ops Lead / Finance",
+    "to_contact": "#ops-leads",
+    "priority": "P2",
+    "trigger": "PARTIAL_PAYMENT",
+    "send_rule": "send now",
+    "text": "🟠 Partial payment, form overstates amount\nInvoice 84909 · Installment_1_of_2 · paid ₹5,250 of ₹10,500 · teacher form says ₹10,500 paid for 24 sessions\nDecision needed: schedule pro-rata sessions only, or hold until installment 2. Do NOT approve the 24-session form as is."
+  },
+  {
+    "invoice_id": "84909",
+    "channel": "WhatsApp",
+    "to_role": "Teacher",
+    "to_contact": "educator_id 1108 (Mr. Vikram S***)",
+    "priority": "P2",
+    "trigger": "FORM_AMOUNT_MISMATCH",
+    "send_rule": "send now",
+    "text": "Hi Mr. Vikram S***, for Ad***t's renewal the invoice shows installment 1 of 2 (₹5,250), but the form says ₹10,500 was paid. Please don't confirm the full 24 sessions to the parent yet - Ops will confirm the schedule once the balance is cleared."
+  },
+  {
+    "invoice_id": "84909",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9899XXXX09",
+    "priority": "P3",
+    "trigger": "PARTIAL_PAYMENT",
+    "send_rule": "send now",
+    "text": "Hi Sn***a, thank you for the first installment of ₹5,250 for Ad***t's renewal (BMB-INV-2026-84909). The second installment of ₹5,250 is due by {due_date}: {installment_2_link}. We'll confirm the next batch of classes as soon as it's received. Reply HELP for any questions."
+  },
+  {
+    "invoice_id": "84910",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9800XXXX10",
+    "priority": "P2",
+    "trigger": "ORPHANED_INVOICE",
+    "send_rule": "send now; one-tap reply buttons",
+    "text": "Hi Vi***m, thank you for renewing My***a's classes 🎉 We've received your payment of ₹11,000 (BMB-INV-2026-84910).\nShould My***a continue in the same batch?\nUnbox Chess Level 1 · CM-G2-Batch-I (Wed & Fri, 5:00 PM) with Coach Arvind K***\nReply 1 = Yes, continue as is\nReply 2 = I'd like a different day/time"
+  },
+  {
+    "invoice_id": "84910",
+    "channel": "WhatsApp",
+    "to_role": "Teacher",
+    "to_contact": "educator_id 1122 (Coach Arvind K***)",
+    "priority": "P2",
+    "trigger": "ORPHANED_INVOICE",
+    "send_rule": "send now",
+    "text": "Hi Coach Arvind K***, My***a's renewal payment (₹11,000, BMB-INV-2026-84910) has come through, but we don't see a renewal form from you yet. We've asked the parent to confirm the same batch. If the parent told you about any change in days/time, just reply here with it - no need to fill the form again."
+  },
+  {
+    "invoice_id": "84910",
+    "channel": "Slack #ops-renewals",
+    "to_role": "Ops agent on shift",
+    "to_contact": "#ops-renewals",
+    "priority": "P2",
+    "trigger": "ORPHANED_INVOICE",
+    "send_rule": "send only if parent has not replied in 4h",
+    "text": "🟠 Paid renewal with no form and no parent confirmation after 4h\nInvoice 84910 · student 68110 · ₹11,000 · paid 22h ago · teacher Coach Arvind K***\nDefault action ready: same-batch renewal in CM-G2-Batch-I. Call parent or click Approve default."
+  },
+  {
+    "invoice_id": "84911",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9811XXXX11",
+    "priority": "P1",
+    "trigger": "PAYMENT_NOT_CONFIRMED",
+    "send_rule": "send after gateway poll confirms still not captured",
+    "text": "Hi An***i, we haven't been able to confirm your payment of ₹12,000 for Is***n's renewal - it shows as incomplete on our side. If the amount was deducted from your account, it will either confirm automatically or be refunded by your bank within 2-3 working days, so please don't pay twice. If you'd like to complete it now, here's a fresh secure link: {new_payment_link}"
+  },
+  {
+    "invoice_id": "84911",
+    "channel": "WhatsApp",
+    "to_role": "Teacher",
+    "to_contact": "educator_id 1125 (Ms. Simran D***)",
+    "priority": "P1",
+    "trigger": "PAYMENT_NOT_CONFIRMED",
+    "send_rule": "send now",
+    "text": "Hi Ms. Simran D***, Is***n's renewal payment (BMB-INV-2026-84911) is not confirmed on our side yet, even though a form was submitted with a UPI screenshot. Please hold off on confirming classes with the parent - we're checking with the gateway and will update you within 4 hours."
+  },
+  {
+    "invoice_id": "84911",
+    "channel": "Slack #ops-payments",
+    "to_role": "Payments owner",
+    "to_contact": "#ops-payments",
+    "priority": "P1",
+    "trigger": "PAYMENT_NOT_CONFIRMED",
+    "send_rule": "send now (engine polls gateway order order_P8x91****11 first)",
+    "text": "🔴 Form says paid, invoice says Failed\nInvoice 84911 · order order_P8x91****11 · ₹12,000 · teacher form 'paid' + UPI screenshot.\nCheck gateway: if captured -> engine auto-approves; if not -> parent already sent a fresh link."
+  },
+  {
+    "invoice_id": "84912",
+    "channel": "Slack #ops-scheduling",
+    "to_role": "Ops scheduling",
+    "to_contact": "#ops-scheduling",
+    "priority": "P1",
+    "trigger": "BATCH_CHANGE_REQUESTED",
+    "send_rule": "send now",
+    "text": "🔴 Paid renewal needs a NEW batch, nobody owns it\nInvoice 84912 · student 68112 · ₹9,000 · paid 17h ago · booking_request 5512 status Awaiting_Parent_Batch_Selection\nParent wants Sat,Sun 11:00 (current: Wed & Fri 16:30). Reference data shows no Little Yogi Gita Level 1 batch at that slot: check capacity or open a waitlist/new batch."
+  },
+  {
+    "invoice_id": "84912",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9822XXXX12",
+    "priority": "P2",
+    "trigger": "BATCH_CHANGE_REQUESTED",
+    "send_rule": "send once Ops has 2-3 slot options",
+    "text": "Hi De***k, thank you for renewing Ta***a's classes. You asked for a weekend 11:00 AM slot - we're checking availability with Acharya Nancy S***. Options we can offer: {slot_options}. Reply with the option number and we'll lock it in. Until then, Ta***a can keep attending the current batch (LY-G3-Batch-B (Wed & Fri, 4:30 PM))."
+  },
+  {
+    "invoice_id": "84913",
+    "channel": "WhatsApp",
+    "to_role": "Parent",
+    "to_contact": "+91-9833XXXX13",
+    "priority": "P3",
+    "trigger": "AUTO_APPROVE",
+    "send_rule": "send immediately after schedule rows are written",
+    "text": "Hi Ar***n, De***a's renewal is confirmed ✅\nUnbox Science Level 1 · SC-G4-Batch-K (Tue & Thu, 6:00 PM) with Ms. Mary M***.\nNext class: 2026-11-05 (please check the app for the full calendar).\nPayment ₹11,500 received · BMB-INV-2026-84913. Reply HELP if anything looks wrong."
+  }
+]

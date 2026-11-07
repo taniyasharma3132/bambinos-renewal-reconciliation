@@ -1,0 +1,15 @@
+code,severity,owner,sla_hours,auto_action
+INVOICE_ID_TYPO,FIX,Engine,0,Re-link form to the invoice matched on user/student/educator/amount; log the correction
+DUPLICATE_FORM,FIX,Engine,0,"Keep earliest form, suppress the rest"
+FORM_APPROVAL_BACKLOG,FIX,Engine,0,Clean form waiting for Ops approval -> auto-approve
+STUCK_PENDING_ALLOCATION,FIX,Engine,0,Same-batch renewal waiting for allocation -> allocate to current batch
+FALSE_BATCH_FULL,FIX,Engine,0,Renewing student already holds a seat -> net new seats = 0; capacity check must not block
+ORPHANED_INVOICE,CONFIRM,Parent -> Ops,4,"Paid invoice, no teacher form: ask parent to confirm same-batch default, nudge teacher, escalate to Ops after 4h"
+PAYER_CONTACT_MISMATCH,CONFIRM,Parent -> Ops,4,Payer phone/email/name differs from registered contact: ask registered parent number to confirm
+DISCOUNT_NO_APPROVAL_REF,BLOCK,Ops Lead / Finance,4,Discount on invoice without an approval reference: approve or reject
+PARTIAL_PAYMENT,BLOCK,Ops Lead / Finance,4,"Installment paid, balance due: apply partial-payment policy, do not schedule full term"
+FORM_AMOUNT_MISMATCH,BLOCK,Teacher -> Ops,4,Teacher-entered amount differs from amount actually paid
+PAYMENT_NOT_CONFIRMED,BLOCK,Payments / Ops,4,"Invoice not in a paid state: poll gateway, never approve on a screenshot"
+BATCH_CHANGE_REQUESTED,BLOCK,Ops Scheduling,6,Parent wants a different batch/time: needs allocation + parent selection; nobody owns it today
+PRICE_MISMATCH,BLOCK,Ops Lead / Finance,4,Invoice gross amount differs from list price for the batch
+ID_MISMATCH,BLOCK,Ops,4,user/class/educator on invoice disagree with master data

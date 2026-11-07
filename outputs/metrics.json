@@ -1,0 +1,212 @@
+{
+  "as_of": "2026-11-04 09:00:00",
+  "invoices_total": 13,
+  "paid_or_partial": 12,
+  "failed": 1,
+  "funnel": {
+    "invoices_paid": 12,
+    "form_submitted_exact_link": 9,
+    "form_approved": 4,
+    "booking_request_created": 4,
+    "batch_allocated": 1,
+    "scheduled": 1
+  },
+  "e2e_scheduled": 1,
+  "e2e_rate_of_paid": 0.083,
+  "e2e_tat_hours": [
+    1.75
+  ],
+  "orphaned_invoice_ids": [
+    "84906",
+    "84910",
+    "84913"
+  ],
+  "orphaned_invoice_rate": 0.25,
+  "payment_to_form_hours": {
+    "values": [
+      0.49,
+      0.83,
+      0.4,
+      0.5,
+      0.83,
+      0.41,
+      0.25,
+      0.5,
+      0.33,
+      0.33
+    ],
+    "median": 0.44999999999999996,
+    "max": 0.83
+  },
+  "form_to_approval_hours": {
+    "values": [
+      0.75,
+      1.83,
+      2.5,
+      1.25
+    ],
+    "median": 1.54,
+    "max": 2.5
+  },
+  "forms_pending": 8,
+  "forms_pending_oldest_h": 47.5,
+  "forms_pending_over_12h": 8,
+  "stuck_over_12h": 11,
+  "stuck_over_12h_ids": [
+    "84902",
+    "84903",
+    "84904",
+    "84905",
+    "84906",
+    "84907",
+    "84908",
+    "84909",
+    "84910",
+    "84912",
+    "84913"
+  ],
+  "revenue_not_scheduled_inr": 126850.0,
+  "duplicate_form_rows": 1,
+  "forms_total": 12,
+  "forms_citing_missing_invoice": [
+    "3313"
+  ],
+  "decision_counts": {
+    "COMPLETED": 1,
+    "AUTO_APPROVE": 5,
+    "PARENT_CONFIRM": 3,
+    "EXCEPTION": 4
+  },
+  "reason_code_counts": {
+    "STUCK_PENDING_ALLOCATION": 1,
+    "FORM_APPROVAL_BACKLOG": 7,
+    "PAYER_CONTACT_MISMATCH": 1,
+    "FALSE_BATCH_FULL": 1,
+    "ORPHANED_INVOICE": 2,
+    "DISCOUNT_NO_APPROVAL_REF": 1,
+    "DUPLICATE_FORM": 1,
+    "PARTIAL_PAYMENT": 1,
+    "FORM_AMOUNT_MISMATCH": 1,
+    "PAYMENT_NOT_CONFIRMED": 1,
+    "BATCH_CHANGE_REQUESTED": 1,
+    "INVOICE_ID_TYPO": 1,
+    "DATA_HYGIENE_HOMOGLYPH": 1
+  },
+  "to_be": {
+    "already_done": [
+      "84901"
+    ],
+    "zero_touch": [
+      "84902",
+      "84903",
+      "84905",
+      "84906",
+      "84908",
+      "84910",
+      "84913"
+    ],
+    "soft_verify": [
+      "84904"
+    ],
+    "human_decision": [
+      "84907",
+      "84909",
+      "84912"
+    ],
+    "zero_touch_rate_of_paid": 0.667
+  },
+  "stuck_table": [
+    {
+      "invoice_id": "84902",
+      "hours_since_payment": 66.66,
+      "stage": "4_booking_request",
+      "net_amount": 10500.0,
+      "decision": "AUTO_APPROVE",
+      "reason_codes": "STUCK_PENDING_ALLOCATION"
+    },
+    {
+      "invoice_id": "84903",
+      "hours_since_payment": 47.9,
+      "stage": "2_form_submitted",
+      "net_amount": 9000.0,
+      "decision": "AUTO_APPROVE",
+      "reason_codes": "FORM_APPROVAL_BACKLOG"
+    },
+    {
+      "invoice_id": "84904",
+      "hours_since_payment": 45.5,
+      "stage": "2_form_submitted",
+      "net_amount": 12000.0,
+      "decision": "PARENT_CONFIRM",
+      "reason_codes": "PAYER_CONTACT_MISMATCH|FORM_APPROVAL_BACKLOG"
+    },
+    {
+      "invoice_id": "84905",
+      "hours_since_payment": 43.83,
+      "stage": "4_booking_request",
+      "net_amount": 11000.0,
+      "decision": "AUTO_APPROVE",
+      "reason_codes": "FALSE_BATCH_FULL"
+    },
+    {
+      "invoice_id": "84906",
+      "hours_since_payment": 41.0,
+      "stage": "1_invoice_paid",
+      "net_amount": 18000.0,
+      "decision": "PARENT_CONFIRM",
+      "reason_codes": "ORPHANED_INVOICE"
+    },
+    {
+      "invoice_id": "84907",
+      "hours_since_payment": 38.24,
+      "stage": "2_form_submitted",
+      "net_amount": 7600.0,
+      "decision": "EXCEPTION",
+      "reason_codes": "DISCOUNT_NO_APPROVAL_REF|FORM_APPROVAL_BACKLOG"
+    },
+    {
+      "invoice_id": "84908",
+      "hours_since_payment": 24.75,
+      "stage": "2_form_submitted",
+      "net_amount": 22000.0,
+      "decision": "AUTO_APPROVE",
+      "reason_codes": "DUPLICATE_FORM|FORM_APPROVAL_BACKLOG"
+    },
+    {
+      "invoice_id": "84909",
+      "hours_since_payment": 23.0,
+      "stage": "2_form_submitted",
+      "net_amount": 5250.0,
+      "decision": "EXCEPTION",
+      "reason_codes": "PARTIAL_PAYMENT|FORM_AMOUNT_MISMATCH|FORM_APPROVAL_BACKLOG"
+    },
+    {
+      "invoice_id": "84910",
+      "hours_since_payment": 21.65,
+      "stage": "1_invoice_paid",
+      "net_amount": 11000.0,
+      "decision": "PARENT_CONFIRM",
+      "reason_codes": "ORPHANED_INVOICE"
+    },
+    {
+      "invoice_id": "84912",
+      "hours_since_payment": 17.33,
+      "stage": "4_booking_request",
+      "net_amount": 9000.0,
+      "decision": "EXCEPTION",
+      "reason_codes": "BATCH_CHANGE_REQUESTED"
+    },
+    {
+      "invoice_id": "84913",
+      "hours_since_payment": 16.17,
+      "stage": "2_form_submitted",
+      "net_amount": 11500.0,
+      "decision": "AUTO_APPROVE",
+      "reason_codes": "INVOICE_ID_TYPO|FORM_APPROVAL_BACKLOG|DATA_HYGIENE_HOMOGLYPH"
+    }
+  ],
+  "dataset_findings": [
+    "faculty_form id 3306 missing from the id sequence (deleted / failed submit?) - check audit log",
+    "invoices id 84913: field 'parent_name' contains Cyrillic look-alike characters -> name matching would silently fail"
+  ]
+}

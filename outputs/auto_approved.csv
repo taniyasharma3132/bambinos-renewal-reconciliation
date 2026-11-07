@@ -1,0 +1,6 @@
+invoice_id,source_form_id,source_booking_request_id,student_id,user_id,educator_id,class_id,classbatch_id,booking_type,sessions_to_schedule,batch_days,start_time,end_time,proposed_first_session,amount_verified_inr,auto_fixes,confidence,hours_since_payment
+84902,3302,5502,68102,41022,1108,205,9202,Regular_Renewal,24,"Mon,Wed",18:00:00,18:50:00,2026-11-09,10500.0,STUCK_PENDING_ALLOCATION,HIGH,66.66
+84903,3303,,68103,41023,1115,301,9203,Regular_Renewal,24,"Wed,Fri",16:30:00,17:20:00,2026-11-06,9000.0,FORM_APPROVAL_BACKLOG,HIGH,47.9
+84905,3305,5505,68105,41025,1122,402,9205,Regular_Renewal,24,"Sat,Sun",11:00:00,11:50:00,2026-11-07,11000.0,FALSE_BATCH_FULL,MEDIUM (assumes the renewing student's seat is retained - validate in shadow week),43.83
+84908,3308,,68108,41028,1115,302,9208,Regular_Renewal,24,"Sat,Sun",09:30:00,10:20:00,2026-11-07,22000.0,DUPLICATE_FORM|FORM_APPROVAL_BACKLOG,HIGH,24.75
+84913,3313,,68113,41033,1130,501,9213,Regular_Renewal,24,"Tue,Thu",18:00:00,18:50:00,2026-11-05,11500.0,INVOICE_ID_TYPO|FORM_APPROVAL_BACKLOG,HIGH,16.17
